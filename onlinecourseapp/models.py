@@ -122,8 +122,8 @@ class Enrollment(models.Model):
 
 # Question model
 class Question(models.Model):
-    course = models.ForeignKey(
-        Course,
+    lesson = models.ForeignKey(
+        Lesson,
         on_delete=models.CASCADE
     )
 
